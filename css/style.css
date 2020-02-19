@@ -1,0 +1,177 @@
+body
+{
+  margin: 0 auto;
+  padding: 0 auto;
+}
+a {
+  text-decoration: none;
+}
+
+.header
+{
+  margin-top: 30px;
+}
+
+.header .logo
+{
+  margin-left: 100px;
+  width: auto;
+  display: inline;
+}
+.nav-item > a
+{
+  font-size: 18px;
+  padding-bottom: 5px;
+  transition: 0.5s;
+  margin-right: 30px;
+}
+.partner > a
+{
+  position: relative;
+  z-index: 1;
+  min-width: 200px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 16px;
+  font-weight: 600;
+  display: inline-block;
+  padding: 0 30px;
+  text-align: center;
+  text-transform: capitalize;
+  border: none;
+  border-radius: 50px;
+  -webkit-transition-duration: 500ms;
+  -o-transition-duration: 500ms;
+  transition-duration: 500ms;
+  -webkit-box-shadow: 0 6px 50px 8px rgba(21, 131, 233, 0.15);
+  box-shadow: 0 6px 50px 8px rgba(21, 131, 233, 0.1);
+  background: red;
+  color: white!important;
+  text-decoration: none;
+}
+.partner a:hover {
+  color: white;
+  text-decoration: none;
+}
+.sign
+{
+  align-self: auto;
+  margin-top: 48px;
+}
+.sign_in_nav
+{
+  display: none;
+}
+
+#search_block
+{
+  max-height: 500px;
+  height: 300px;
+  background: #00aeef;
+}
+
+#search_block h3
+{
+  color: white;
+  font-family: 'walsheim-medium,sans-serif';
+}
+
+#search_block input
+{
+  border: none;
+  border-radius: 30px 30px 30px 30px;
+  height: 50px;
+  margin-top: 20px;
+  padding: 25px;
+  color:  grey;
+}
+
+#search_block button
+{
+  border: none;
+  border-radius: 60%;
+  height: 50px;
+  width:  50px;
+  background: white url('../images/search-icon.png');
+  margin-left: 10px;
+  background-position: center;
+  background-size: 30px 30px;
+  background-repeat: no-repeat;
+  bottom: 6px;
+}
+
+#steps_block
+{
+  margin-top: 50px;
+}
+.step-text
+{
+  margin-bottom: 32px;
+}
+
+.step-text span
+{
+  width: 60%;
+}
+
+.step-img img
+{
+  width: 60%;
+  /*margin-bottom: 32px;*/
+}
+
+.single-step > .single-step-1-icon
+{
+  background: url('https://cdn4.iconfinder.com/data/icons/technology-83/1000/focus_focus_selector_selected_selector_select_target_selection-512.png') no-repeat center;
+  background-size: 150px 150px;
+  padding: 100px;
+}
+
+.single-step > .single-step-2-icon
+{
+  background: url('https://cdn4.iconfinder.com/data/icons/technology-83/1000/back-end_backward_programming_back_back_end_end_development-512.png') no-repeat center;
+  background-size: 150px 150px;
+  padding: 100px;
+}
+
+.single-step-3-icon, .single-step-4-icon
+{
+  background: url('https://cdn4.iconfinder.com/data/icons/technology-83/1000/group_growth_product_growth_hacking_growth_graph_business_growth_hacking-512.png') no-repeat center;
+  background-size: 150px 150px;
+  padding: 100px;
+}
+
+.single-step-4-icon
+{
+  background: url('https://cdn4.iconfinder.com/data/icons/technology-83/1000/object_programming_development_oriented_developer_object-oriented_programming_software-512.png') no-repeat center;
+  background-size: 150px 150px;
+  padding: 100px;
+}
+
+.single-step h5 {
+  text-align: center;
+}
+@media only screen and (max-width: 576px) {
+  .sign {
+    display: none!important;
+  }
+  .sign_in_nav
+  {
+    padding: .5rem 0rem;
+    color: #037cff;
+    display: block;
+  }
+
+  #search_form button
+  {
+    border-radius: 30px 30px 30px 30px;
+    width: 90%;
+    margin-top: 15px;
+    margin-left:0;
+    padding: 0;
+  }
+  #search_form input
+  {
+    width: 90%;
+  }
+}
