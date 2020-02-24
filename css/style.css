@@ -7,11 +7,6 @@ a {
   text-decoration: none;
 }
 
-.header
-{
-  margin-top: 30px;
-}
-
 .header .logo
 {
   margin-left: 100px;
@@ -104,20 +99,29 @@ a {
 {
   margin-top: 50px;
 }
-.step-text
+
+.step-text, .step-text1
 {
-  margin-bottom: 32px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .step-text span
 {
-  width: 60%;
+  width: 92%;
+  display: inline-block;
+  margin-left: 5%;
+}
+.step-img, .step-img1
+{
+  display: flex;
+  flex-direction: column;
 }
 
-.step-img img
-{
-  width: 60%;
-  /*margin-bottom: 32px;*/
+.steps_block1 {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row-reverse;
 }
 
 .single-step > .single-step-1-icon
@@ -148,9 +152,150 @@ a {
   padding: 100px;
 }
 
-.single-step h5 {
+.single-step h5
+{
   text-align: center;
 }
+
+#providing
+{
+  margin-top: 50px;
+}
+
+#categories div a 
+{
+  text-decoration: none;
+  color: black;
+}
+
+#categories .row .alone_category
+{
+  margin: 25px;
+  float: left;
+  border-bottom: 2px solid white;
+}
+
+#categories .row .alone_category img
+{
+  width: 80px;
+  margin-left: 10px;
+}
+
+.category_text
+{
+  margin-top: 10px;
+  width: 100px;
+  text-align: center;
+}
+
+#templates
+{
+  width:auto;
+  margin-top: 30px;
+  margin-left: 15%;
+}
+
+.templates-items
+{
+  width: auto;
+  margin-left: 15px;
+}
+
+.templates_items > div
+{
+  margin-left: 100px!important;
+  /* width: auto;
+  display: inline; */
+}
+
+.single_template_block
+{
+  margin-top: 30px;
+  /* margin-right: 10px; */
+}
+
+.template_img
+{
+  margin-left: 5%;
+  width: auto!important;
+
+}
+
+.template_img img
+{
+  width: 350px!important;
+}
+
+.template_buttons {
+  width: 90%;
+  margin-top: 15px;
+  margin-left: 5%;
+  /* margin-right: 50%; */
+}
+
+.details_btn
+{
+  transition: 0.5s;
+  width: 30%;
+  display: inline-block;
+  padding: 10px;
+  border: white;
+  color: #637083;
+  border: 1px solid #c8cfd5;
+  text-align: center;
+  margin-left: 18px;
+  font-family: Ubuntu,sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  border-bottom: 3px solid #c8cfd5;
+}
+
+.demo_btn
+{
+  transition: 0.5s;
+  width: 30%;
+  display: inline-block;
+  padding: 10px;
+  border: white;
+  color: white;
+  background: #1373ea;
+  border: 1px solid #00aeef;
+  border-bottom: 3px solid #c8cfd5;
+  text-align: center;
+  margin-left: 40px;
+  font-family: Ubuntu,sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.details_btn:hover 
+{
+  transition: 0.5s;
+  color: #231f20;
+  text-decoration: none;
+}
+
+.demo_btn:hover 
+{
+  transition: 0.5s;
+  color: #ffffff;
+  background-color: #0b53b4;
+  text-decoration: none;
+}
+
+#footer
+{
+  margin-top: 65px;
+  background: #231f20;
+}
+
+.footer
+{
+  color: white;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+
 @media only screen and (max-width: 576px) {
   .sign {
     display: none!important;
@@ -173,5 +318,133 @@ a {
   #search_form input
   {
     width: 90%;
+  }
+}
+ 
+@media only screen and (min-width: 1200px) and (max-width: 1500px)
+{
+  #templates
+  {
+    margin-left: 4%;
+  }
+
+  .template_buttons
+  {
+    margin-left: 8%;
+  }
+} 
+@media only screen and (min-width: 1000px) and (max-width: 1200px)
+{
+  #templates 
+  {
+    margin-left: 12%;
+  }
+}
+
+
+@media only screen and (min-width: 767px) and (max-width: 992px)
+{
+
+  #templates 
+  {
+    margin-left: 3%;
+  }
+  .template_buttons 
+  {
+    margin-left: 8%;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 769px) 
+{
+  #templates
+  {
+    margin-left: 5%;
+  }
+  .template_buttons
+  {
+    margin-left: 26%;
+  }
+  .details_btn, .demo_btn
+  {
+    width: 20%;
+  }
+  .template_img img
+  {
+    margin-left: 100px;
+  }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 600px) 
+{
+  #templates
+  {
+    margin-left: 16%;
+  }
+
+  .template_buttons
+  {
+    width: 73%;
+    margin-left: 13%;
+  }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 500px)
+{
+  #templates 
+  {
+    margin-left: 5%;
+  }
+}
+
+@media only screen and (min-width: 386px) and (max-width: 400px)
+{
+  #templates
+  {
+    width: 74%;
+  }
+  .template_img img
+  {
+    width: 250px!important;
+  }
+}
+
+@media only screen and (max-width: 386px)
+{
+  .template_buttons 
+  {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .template_img img
+  {
+    width: 250px!important;
+  }
+
+  .template_img 
+  {
+    margin-left: 9%;
+  }
+
+  #temoplates 
+  {
+    margin-left: 6%;
+  }
+}
+
+@media only screen and (min-width: 892px) and (max-width: 992px)
+{
+  .template_buttons 
+  {
+    margin-left: 15%;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 869px)
+{
+  .template_buttons 
+  {
+    margin-left: 10%;
   }
 }
