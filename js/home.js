@@ -20,12 +20,5 @@ $(window).resize(function(){
             slidesToShow: 3,
             slidesToScroll: 3,
           });
-    } else if ($( "#categories .row" ).hasClass( "slide-categories" )) {
-        console.log('sdcs');
-        $( "#categories .row" ).reset()
-        // $('#categories .row').removeClass('slick-prev slick-arrow slick-disabled');
-        // $('div slick-list draggable').remove(this);
-        // $('div slick-list draggable').remove(this);
-        // $('div slick-track').remove(this);
     }
 });
