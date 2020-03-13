@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/slick/slick.css">
+    <link rel="stylesheet" href="css/slick/slick-theme.css">
+    <title>Laravel Cloud</title>
+    <script src="js/jquery-slim.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/home.js"></script>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row justify-content-between header">
+        <div class="col-lg-10 col-md-8 col-sm-8">
+          <nav class="navbar navbar-expand-xl navbar-light ">
+            <a class="navbar-brand" href="index.html">
+              <img src="images/logo.png" alt="" style="width: 100px">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Home </a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="templates.html">Templates </a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="#providing">Features </a>
+                </li>
+                <!-- <li class="nav-item active" style="width: max-content">
+                  <a class="nav-link" href="#">Fast Order </a>
+                </li> -->
+                <li class="nav-item active">
+                  <a class="nav-link" href="#blog">Blog </a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Contact </a>
+                </li>
+
+                <li class="sign_in_nav" >
+                  <a href="#">Login</a> / <a href="#">Register</a>
+                </li>
+                <li class="nav-item partner" >
+                  <a class="nav-link" href="#">Become a partner</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-4 sign">
+          <div style="width: max-content">
+            <a href="#">Login</a> / <a href="#">Register</a>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center align-items-center" id="search_block">
+        <div>
+          <h3 class="text-center">You can find the best Laravel templates right now</h3>
+          <form class="text-center" id="search_form">
+            <input type="text" class="col-xl-10 col-lg-10 col-md-8 col-sm-10" name="search_input" placeholder="For example: Business">
+            <button type="submit" class="col-xl-2 col-lg-2 col-md-4 col-sm-2"></button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="container" id="categories">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-xl-1 col-lg-1 col-md-1 col-sm-2 col-xs-2 alone_category" id="category-1" data-id="1">
+          <a href="#!">
+            <div>
+              <div>
+                <img src="images/icons_categories/business.png" alt="">
+              </div>
+              <div class="category_text">
+                <span class="">Business</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-xl-1 col-lg-1 col-md-1 col-sm-2 col-xs-2 alone_category" id="category-2" data-id="2">
+          <a href="#!">
+            <div>
+              <div>
+                <img src="images/icons_categories/medical.png" alt="">
+              </div>
+              <div class="category_text">
+                <span class="">Medical</span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-xl-1 col-lg-1 col-md-1 col-sm-2 col-xs-2 alone_category" id="category-3" data-id="3">
+          <a href="#!">
+            <div>
+              <div>
+                <img src="images/icons_categories/real_estate.png" alt="">
+              </div>
+              <div class="category_text">
+                <span class="">Real Estate</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-xl-1 col-lg-1 col-md-1 col-sm-2 col-xs-2 alone_category" id="category-4" data-id="4">
+          <a href="#!">
+            <div>
+              <div>
+                <img src="images/icons_categories/personal.png" alt="">
+              </div>
+              <div class="category_text">
+                <span class="">Personal</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-xl-1 col-lg-1 col-md-1 col-sm-2 col-xs-2 alone_category" id="category-5" data-id="5">
+          <a href="#!">
+            <div>
+              <div>
+                <img src="images/icons_categories/photography.png" alt="">
+              </div>
+              <div class="category_text">
+                <span class="">Photography</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-xl-1 col-lg-1 col-md-1 col-sm-2 col-xs-2 alone_category" id="category-6" data-id="6">
+          <a href="#!">
+            <div>
+              <div>
+                <img src="images/icons_categories/restaurant.png" alt="">
+              </div>
+              <div class="category_text">
+                <span class="">Restaurant</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-xl-1 col-lg-1 col-md-1 col-sm-2 col-xs-2 alone_category" id="category-7" data-id="7">
+          <a href="#!">
+            <div>
+              <div>
+                <img src="images/icons_categories/other.png" alt="">
+              </div>
+              <div class="category_text">
+                <span class="">Others</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="container" id="templates">
+      <div class="row justify-content-center align-items-center templates-items">
+        <div>
+          <div class="col-xl-4 loc-lg-6 col-md-6 col-sm-12 col-xm-12 single_template_block">
+            <div class="template_img justify-content-center align-items-center">
+              <img src="images/template_images/template.jpg" alt="">
+            </div>
+          </div>
+          <div class="single_template_block">
+            <div class="template_buttons">
+              <a class="details_btn" href="#!">Details</a>
+              <a class="demo_btn" href="#!">Demo</a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="col-xl-4 loc-lg-6 col-md-6 col-sm-12 col-xm-12 single_template_block">
+            <div class="template_img justify-content-center align-items-center">
+              <img src="images/template_images/template.jpg" alt="">
+            </div>
+          </div>
+          <div class="single_template_block">
+            <div class="template_buttons">
+              <a class="details_btn" href="#!">Details</a>
+              <a class="demo_btn" href="#!">Demo</a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="col-xl-4 loc-lg-6 col-md-6 col-sm-12 col-xm-12 single_template_block">
+            <div class="template_img justify-content-center align-items-center">
+              <img src="images/template_images/template.jpg" alt="">
+            </div>
+          </div>
+          <div class="single_template_block">
+            <div class="template_buttons">
+              <a class="details_btn" href="#!">Details</a>
+              <a class="demo_btn" href="#!">Demo</a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="col-xl-4 loc-lg-6 col-md-6 col-sm-12 col-xm-12 single_template_block">
+            <div class="template_img justify-content-center align-items-center">
+              <img src="images/template_images/template.jpg" alt="">
+            </div>
+          </div>
+          <div class="single_template_block">
+            <div class="template_buttons">
+              <a class="details_btn" href="#!">Details</a>
+              <a class="demo_btn" href="#!">Demo</a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="col-xl-4 loc-lg-6 col-md-6 col-sm-12 col-xm-12 single_template_block">
+            <div class="template_img justify-content-center align-items-center">
+              <img src="images/template_images/template.jpg" alt="">
+            </div>
+          </div>
+          <div class="single_template_block">
+            <div class="template_buttons">
+              <a class="details_btn" href="#!">Details</a>
+              <a class="demo_btn" href="#!">Demo</a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="col-xl-4 loc-lg-6 col-md-6 col-sm-12 col-xm-12 single_template_block">
+            <div class="template_img justify-content-center align-items-center">
+              <img src="images/template_images/template.jpg" alt="">
+            </div>
+          </div>
+          <div class="single_template_block">
+            <div class="template_buttons">
+              <a class="details_btn" href="#!">Details</a>
+              <a class="demo_btn" href="#!">Demo</a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="col-xl-4 loc-lg-6 col-md-6 col-sm-12 col-xm-12 single_template_block">
+            <div class="template_img justify-content-center align-items-center">
+              <img src="images/template_images/template.jpg" alt="">
+            </div>
+          </div>
+          <div class="single_template_block">
+            <div class="template_buttons">
+              <a class="details_btn" href="#!">Details</a>
+              <a class="demo_btn" href="#!">Demo</a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="col-xl-4 loc-lg-6 col-md-6 col-sm-12 col-xm-12 single_template_block">
+            <div class="template_img justify-content-center align-items-center">
+              <img src="images/template_images/template.jpg" alt="">
+            </div>
+          </div>
+          <div class="single_template_block">
+            <div class="template_buttons">
+              <a class="details_btn" href="#!">Details</a>
+              <a class="demo_btn" href="#!">Demo</a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="col-xl-4 loc-lg-6 col-md-6 col-sm-12 col-xm-12 single_template_block">
+            <div class="template_img justify-content-center align-items-center">
+              <img src="images/template_images/template.jpg" alt="">
+            </div>
+          </div>
+          <div class="single_template_block">
+            <div class="template_buttons">
+              <a class="details_btn" href="#!">Details</a>
+              <a class="demo_btn" href="#!">Demo</a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="col-xl-4 loc-lg-6 col-md-6 col-sm-12 col-xm-12 single_template_block">
+            <div class="template_img justify-content-center align-items-center">
+              <img src="images/template_images/template.jpg" alt="">
+            </div>
+          </div>
+          <div class="single_template_block">
+            <div class="template_buttons">
+              <a class="details_btn" href="#!">Details</a>
+              <a class="demo_btn" href="#!">Demo</a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="col-xl-4 loc-lg-6 col-md-6 col-sm-12 col-xm-12 single_template_block">
+            <div class="template_img justify-content-center align-items-center">
+              <img src="images/template_images/template.jpg" alt="">
+            </div>
+          </div>
+          <div class="single_template_block">
+            <div class="template_buttons">
+              <a class="details_btn" href="#!">Details</a>
+              <a class="demo_btn" href="#!">Demo</a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="col-xl-4 loc-lg-6 col-md-6 col-sm-12 col-xm-12 single_template_block">
+            <div class="template_img justify-content-center align-items-center">
+              <img src="images/template_images/template.jpg" alt="">
+            </div>
+          </div>
+          <div class="single_template_block">
+            <div class="template_buttons">
+              <a class="details_btn" href="#!">Details</a>
+              <a class="demo_btn" href="#!">Demo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="container-fluid" id="footer">
+      <div class="row justify-content-center">
+        <div class="footer">
+          <p>Powered with <3 FOR YOU!</p>
+        </div>
+      </div>
+    </footer>
+    <script src="js/slick/slick.min.js"></script>
+  </body>
+</html>
