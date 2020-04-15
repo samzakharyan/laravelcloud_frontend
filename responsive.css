@@ -1,0 +1,51 @@
+@media all  and (max-width: 1024px) {
+    .top-container-title {
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+
+    .information-box {
+        order: 2;
+    }
+
+    .information {
+        order: 1;
+    }
+
+}
+
+@media all  and (max-width: 760px) {
+    .nav-box {
+        width: 50%;
+    }
+
+    .nav-button {
+        margin-left: 170px;
+        margin-bottom: 20px;
+    }
+
+    .information-box {
+        flex-wrap: wrap;
+        order: 1;
+    }
+
+    .information {
+        order: 2;
+        min-width: 300px;
+    }
+
+}
+
+@media all  and (max-width: 720px) {
+    .box-register {
+        min-width: 200px;
+        padding: 60px;
+        margin-right: 60px;
+
+    }
+    .become-img{
+        width: 100%;
+        min-width: 200px;
+        padding: 60px;
+    }
+}
