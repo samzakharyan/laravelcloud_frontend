@@ -31,12 +31,24 @@
 
     .information {
         order: 2;
-        min-width: 300px;
+        min-width: 270px;
     }
 
 }
 
 @media all  and (max-width: 720px) {
+    .top-container-title{
+        text-align: center;
+        display: flex;
+        width: 100%;
+        margin-left: 0;
+        margin-top: 0;
+    }
+    .top-container-img{
+        opacity: 0;
+        display: none;
+        visibility: hidden;
+    }
     .box-register {
         min-width: 200px;
         padding: 60px;

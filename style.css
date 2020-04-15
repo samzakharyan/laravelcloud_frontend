@@ -134,8 +134,37 @@ header {
 }
 
 /*main end*/
-
-
+.top-information-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.top-information-text{
+    width: 50%;
+    padding: 5px;
+    min-width: 300px;
+    margin: 0 auto;
+}
+.top-information-img{
+    width: 48%;
+    padding: 5px;
+    min-width: 300px;
+    margin: 0 auto;
+}
+.top-information-img img{
+    width: 100%;
+}
+.top-information-text p{
+    font-family: 'Nunito', sans-serif;
+    color: #707070;
+    font-weight: 300;
+    font-style: italic;
+    margin: 10px auto;
+}
+.top-text-one{
+    color: red;
+}
 .top {
     background: #006794;
     height: 40vh;
@@ -200,12 +229,14 @@ header {
 
 .information {
     width: 70%;
-    line-height: 45px
+    line-height: 45px;
+    margin: 0 auto;
 }
 
 .information-img-box {
     width: 20%;
     min-width: 200px;
+    margin: 0 auto;
 }
 
 .information-img-box img {
@@ -255,7 +286,7 @@ header {
 .img-content {
     width: 18%;
     text-align: center;
-    margin: 10px auto;
+    margin: 0 auto;
     min-width: 180px;
 }
 
