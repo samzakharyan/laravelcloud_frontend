@@ -30,9 +30,6 @@ a {
 
 }
 
-.nav-container {
-    width: 100%;
-}
 
 header {
     position: fixed;
@@ -44,10 +41,11 @@ header {
 .nav {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
 }
 
 .nav-logo {
-    width: 12%;
+    width: 6%;
     min-width: 50px;
 
 }
@@ -57,15 +55,19 @@ header {
 }
 
 .nav-container {
-    width: 50%;
+    width: 90%;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     padding: 10px;
+    margin: 0 auto;
 }
 
 .navigation {
-    width: 60%;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .nav-title {
@@ -74,6 +76,7 @@ header {
     display: flex;
     justify-content: space-between;
     color: #707070;
+    width: 40%;
 }
 
 .nav-title a {
@@ -97,11 +100,10 @@ header {
 }
 
 .nav-box {
-    width: 40%;
+    width: 60%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding: 10px;
     flex-wrap: wrap;
 }
 
@@ -131,6 +133,55 @@ header {
 
 .svg {
     fill: #006794;
+}
+.nav-checkbox{
+    display: none;
+}
+.hamburger-menu{
+    transform: rotate(180deg);
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    width: 50%;
+    cursor: pointer;
+    position: relative;
+    min-width: 290px;
+}
+.menu-line{
+    transition: all .5s;
+    background: #707070;
+    height: 3px;
+    width: 6%;
+    display: block;
+    margin: 5px 0;
+    min-width: 25px;
+}
+.menu-navigation{
+    transition: all .5s;
+    opacity: 0;
+    visibility: hidden;
+    width: 2%;
+    position: absolute;
+    bottom: 0;
+    left: -11%;
+    background: white;
+    box-shadow: 2px -5px 5px -1px #c4c4c4;
+    height: 280px;
+    z-index: -1;
+}
+.nav-checkbox:checked +.hamburger-menu .menu-navigation{
+    transition: all .5s;
+    width: 100%;
+    opacity: 1;
+    visibility: visible;
+}
+.nav-checkbox:checked +.hamburger-menu .menu-line.active1{
+    transition: all .5s;
+    transform: rotate(35deg);
+}
+.nav-checkbox:checked +.hamburger-menu .menu-line.active2{
+    transition: all .5s;
+    transform: rotate(-35deg);
 }
 
 /*main end*/
@@ -224,7 +275,7 @@ header {
 .information-box {
     display: flex;
     justify-content: space-between;
-    margin: 70px 0;
+    margin: 70px auto;
 }
 
 .information {
@@ -336,6 +387,7 @@ header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding-bottom: 100px;
 }
 
 .our-box {
@@ -397,15 +449,75 @@ header {
     fill: #ef8318;
     margin-left: 10px;
 }
-
-
+.subscribe-box{
+    border: 1px solid;
+    width: 60%;
+    padding: 70px 0;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    min-width: 300px;
+}
+.subscribe-content{
+    margin: 0 auto;
+    width: 40%;
+    padding: 10px;
+    min-width: 200px;
+}
+.subscribe-img{
+    width: 40%;
+    margin: 0 auto;
+    padding: 10px;
+    min-width: 200px;
+}
+.subscribe-img img {
+    width: 100%;
+}
+.subscribe-log{
+    display: block;
+    margin: 10px auto;
+    padding: 5px 5px;
+    border-radius: 10px;
+    border: 1px solid;
+    outline: none;
+    width: 80%;
+}
+.subscribe-sub{
+    padding: 10px 25px;
+    background: #006794;
+    outline: none;
+    border-radius: 10px;
+    border: 1px solid;
+    color: white;
+    cursor: pointer;
+}
+.subscribe-title{
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+    color: #006794;
+}
+.subscribe-subtitle{
+    font-family: 'Nunito', sans-serif;
+    color: #707070;
+    font-size: 25px;
+}
 /*become*/
+.become-container{
+    padding-top: 100px;
+}
 .become-title-box{
     text-align: center;
 }
 .become-title{
     font-family: 'Nunito', sans-serif;
     font-size: 35px;
+}
+.box-register{
+    width: 35%;
 }
 .become-text{
     font-family: 'Nunito', sans-serif;
@@ -416,43 +528,35 @@ header {
     margin: 0 auto;
     min-width: 290px;
 }
-.inp-content-svg{
-    width: 10%;
-    height: 100%;
-    position: absolute;
-    z-index: 1;
-}
 .inp-content{
-    display: block;
-    width: 100%;
     position: relative;
-    padding-bottom: 20px;
+    text-align: center;
 }
 .inp-content-svg{
-    width: 8%;
-    height: 100%;
     position: absolute;
+    top: 30%;
+    height: 60%;
+    right: 89%;
     z-index: 1;
-    bottom: 40%;
-    left: 0;
+    width: 5%;
+    transform: translate(-50%, -50%);
 }
 .inp{
     font-family: 'Nunito', sans-serif;
-    width: 100%;
     color: black;
     font-weight: bold;
     opacity: 0.9;
     outline: none;
     border-bottom: 1px solid;
-    padding: 2px 40px;
+    padding-left: 40px;
     border-left: 0;
     border-radius: 0;
     border-right: 0;
     border-top: 0;
+    width: 100%;
+    margin: 15px;
 }
-.inp-textarea{
-    height: 76px;
-}
+
 .sub{
     font-family: 'Nunito', sans-serif;
     color: #707070;;
@@ -467,13 +571,10 @@ header {
     letter-spacing: 3px;
     font-size: 20px;
     border-bottom: 1px solid;
-}
-.box-register{
-    width: 25%;
-    text-align: center;
+    margin-left: 35px;
 }
 .become-img{
-    width: 40%;
+    width: 50%;
 }
 .become-img img{
     width: 100%;

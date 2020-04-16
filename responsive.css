@@ -1,4 +1,46 @@
 @media all  and (max-width: 1024px) {
+    .hamburger-menu {
+        opacity: 1;
+        visibility: visible;
+        display: inline-block;
+    }
+
+    .navigation {
+        display: none;
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    .nav-checkbox:checked + .hamburger-menu .navigation {
+        opacity: 1;
+        visibility: visible;
+        display: inline-block;
+        transform: rotate(180deg);
+        position: absolute;
+        bottom: 12%;
+        right: 5%;
+    }
+
+    .nav-button {
+        margin-left: 144px;
+    }
+
+    .nav-title {
+        font-family: 'Nunito', sans-serif;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        color: #707070;
+        width: 40%;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .nav-title li {
+        margin: 5px 0;
+    }
+
     .top-container-title {
         margin-left: 20px;
         margin-top: 20px;
@@ -11,17 +53,49 @@
     .information {
         order: 1;
     }
-
+.inp-content-svg{
+    position: absolute;
+    top: 30%;
+    height: 60%;
+    right: 83%;
+    z-index: 1;
+    width: 5%;
+    transform: translate(-50%, -50%);
+    min-width: 30px;
+}
 }
 
+@media all  and (max-width: 768px){
+    .inp-content-svg {
+        position: absolute;
+        top: 30%;
+        height: 60%;
+        right: 77%;
+        z-index: 1;
+        width: 5%;
+        transform: translate(-50%, -50%);
+        min-width: 30px;
+    }
+}
 @media all  and (max-width: 760px) {
+    .navigation {
+        width: 80%;
+    }
+
+    .nav-container {
+        width: 90%;
+    }
+
     .nav-box {
-        width: 50%;
+        width: 100%;
+    }
+
+    .reg-box {
+        margin: 5px 0;
     }
 
     .nav-button {
-        margin-left: 170px;
-        margin-bottom: 20px;
+        margin: 0 auto;
     }
 
     .information-box {
@@ -37,25 +111,40 @@
 }
 
 @media all  and (max-width: 720px) {
-    .top-container-title{
+    .reg-box {
+        width: 85%;
+    }
+
+    .top-container-title {
         text-align: center;
         display: flex;
         width: 100%;
-        margin-left: 0;
-        margin-top: 0;
+        margin: 0 auto;
     }
-    .top-container-img{
+
+    .top-container-img {
         opacity: 0;
         display: none;
         visibility: hidden;
     }
+
     .box-register {
         min-width: 200px;
         padding: 60px;
         margin-right: 60px;
-
     }
-    .become-img{
+    .inp-content-svg{
+        position: absolute;
+        top: 30%;
+        height: 60%;
+        right: 70%;
+        z-index: 1;
+        width: 5%;
+        transform: translate(-50%, -50%);
+        min-width: 25px;
+    }
+
+    .become-img {
         width: 100%;
         min-width: 200px;
         padding: 60px;
