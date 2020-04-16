@@ -53,6 +53,13 @@
     .information {
         order: 1;
     }
+    .svg{
+        height: 20px;
+    }
+    .nav-button {
+        margin-bottom: 5px;
+        padding: 10px;
+    }
 .inp-content-svg{
     position: absolute;
     top: 30%;
@@ -92,6 +99,7 @@
 
     .reg-box {
         margin: 5px 0;
+        width: 75%;
     }
 
     .nav-button {
@@ -112,7 +120,7 @@
 
 @media all  and (max-width: 720px) {
     .reg-box {
-        width: 85%;
+        width: 70%;
     }
 
     .top-container-title {
