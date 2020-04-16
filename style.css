@@ -393,6 +393,7 @@ header {
 .our-box {
     width: 30%;
     min-width: 300px;
+    margin: 0 auto;
 }
 
 .our-img {
