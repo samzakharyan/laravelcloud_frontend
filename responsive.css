@@ -115,12 +115,16 @@
         order: 2;
         min-width: 270px;
     }
+    .information-title{
+        text-align: center;
+    }
 
 }
 
 @media all  and (max-width: 720px) {
     .reg-box {
         width: 70%;
+        margin-right: 40px;
     }
 
     .top-container-title {
