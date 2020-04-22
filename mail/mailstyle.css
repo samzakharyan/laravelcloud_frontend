@@ -7,8 +7,9 @@
     display: flex;
     position: relative;
     width: 50%;
-    margin: 100px auto;
+    margin: 0 auto;
     min-width: 320px;
+    padding-top: 120px;
 }
 
 .register-box {
@@ -132,7 +133,8 @@
     width: 90%;
     position: absolute;
     left: 15%;
-    top: 5%;
+    top: 30%;
+    min-width: 455px;
 }
 .register-img img{
     width: 100%;

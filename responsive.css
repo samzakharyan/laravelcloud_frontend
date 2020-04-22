@@ -53,26 +53,29 @@
     .information {
         order: 1;
     }
-    .svg{
+
+    .svg {
         height: 20px;
     }
+
     .nav-button {
         margin-bottom: 5px;
         padding: 10px;
     }
-.inp-content-svg{
-    position: absolute;
-    top: 30%;
-    height: 60%;
-    right: 83%;
-    z-index: 1;
-    width: 5%;
-    transform: translate(-50%, -50%);
-    min-width: 30px;
-}
+
+    .inp-content-svg {
+        position: absolute;
+        top: 30%;
+        height: 60%;
+        right: 83%;
+        z-index: 1;
+        width: 5%;
+        transform: translate(-50%, -50%);
+        min-width: 30px;
+    }
 }
 
-@media all  and (max-width: 768px){
+@media all  and (max-width: 768px) {
     .inp-content-svg {
         position: absolute;
         top: 30%;
@@ -84,6 +87,7 @@
         min-width: 30px;
     }
 }
+
 @media all  and (max-width: 760px) {
     .navigation {
         width: 80%;
@@ -115,10 +119,16 @@
         order: 2;
         min-width: 270px;
     }
-    .information-title{
+
+    .information-title {
         text-align: center;
     }
 
+    .register-img {
+        display: none;
+        opacity: 0;
+        visibility: hidden;
+    }
 }
 
 @media all  and (max-width: 720px) {
@@ -145,7 +155,8 @@
         padding: 60px;
         margin-right: 60px;
     }
-    .inp-content-svg{
+
+    .inp-content-svg {
         position: absolute;
         top: 30%;
         height: 60%;
