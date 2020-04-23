@@ -3,6 +3,7 @@
     padding: 0;
 }
 
+/*registration*/
 .register-container {
     display: flex;
     position: relative;
@@ -22,7 +23,21 @@
     opacity: 0.9;
     min-width: 260px;
 }
-
+.hidden-title{
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: 30px auto;
+    color: red;
+    min-width: 270px;
+}
+.hidden-title svg{
+    fill: red;
+}
 .reg-title {
     font-family: 'Nunito', sans-serif;
     font-weight: bold;
@@ -51,8 +66,15 @@
     position: absolute;
     top: 10%;
     right: 10%;
+    cursor: pointer;
 }
-
+.pas-title{
+    display: flex;
+    align-items: center;
+}
+.pas-title p{
+    color: #0c3d86;
+}
 .reg-sub {
     font-family: 'Nunito', sans-serif;
     padding: 10px 25px;
@@ -71,43 +93,10 @@
     color: #ACACAC;
 }
 
-.informat-svg-box {
-    display: flex;
-    justify-content: space-evenly;
-    width: 70%;
-    margin: 0 auto;
-}
-
-.informat-svg {
-    display: flex;
-    width: 50%;
-    align-items: center;
-    margin: 10px;
-}
-
-.informat-svg a {
-    font-family: 'Nunito', sans-serif;
-    font-weight: bold;
-    text-decoration: none;
-    display: contents;
-    color: #ACACAC;
-}
-
-.informat-svg svg {
-    margin: 5px;
-}
-
-.informat-svg1 {
-    fill: blue;
-}
-
-.informat-svg2 {
-    fill: red;
-}
-
-.last-text{
+.last-text {
     margin-top: 40px;
 }
+
 .last-text::before {
     content: "";
     width: 100%;
@@ -116,26 +105,48 @@
     background: #707070;
     margin: 10px auto;
 }
-.last-text-title{
+
+.last-text-title {
     display: inline-block;
     font-family: 'Nunito', sans-serif;
     font-weight: bold;
     color: #ACACAC;
     margin: 5px;
 }
-.last-text-title a{
+
+.last-text-title a {
     font-family: 'Nunito', sans-serif;
     font-weight: bold;
-    color: #ACACAC;
+    color: #0c3d86;
     text-decoration: none;
 }
-.register-img{
-    width: 90%;
+.register-img2{
+    width: 75%;
     position: absolute;
-    left: 15%;
-    top: 30%;
+    left: 25%;
+    top: 25%;
     min-width: 455px;
 }
-.register-img img{
+.register-img2 img{
     width: 100%;
 }
+.register-img {
+    width: 85%;
+    position: absolute;
+    left: 20%;
+    top: 25%;
+    min-width: 455px;
+}
+
+.register-img img {
+    width: 100%;
+}
+
+/*registration end*/
+
+
+/*login*/
+
+
+
+/*login end*/
