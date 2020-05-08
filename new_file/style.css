@@ -1,0 +1,53 @@
+.a{
+    color: white;
+    font-size: 25px;
+}
+.a:hover{
+    text-decoration: none;
+    color: white;
+
+}
+li{
+    list-style: none;
+}
+i{
+    font-size: 45px;
+    margin: 10px;
+    color: white;
+}
+.user{
+    font-size: 10rem;
+}
+.box{
+    background: url("image/161.jpg") center , no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.about{
+    min-width: 320px;
+}
+.about-text{
+    min-width: 290px;
+}
+.box > div{
+    opacity: 0.9;
+    min-width: 255px;
+}
+.services-box{
+    background: #66CBB4;
+}
+.services-box-svg{
+    width: 35%;
+    background: white;
+    overflow: hidden;
+    border-radius: 55px;
+    display: inline-block;
+    min-width: 100px;
+}
+.services-box-svg > svg{
+    height: 100px;
+    width: 70%;
+}
+.fa-globe{
+    font-size: 5rem;
+}
